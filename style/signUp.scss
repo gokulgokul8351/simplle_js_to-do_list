@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../assets/7529385.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  @media screen and (max-width: 700px) {
+    background-image: none;
+  }
+  @media screen and (max-width: 699px) {
+    background-image: url(../assets/19985.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+}
+
+section {
+  position: absolute;
+  top: 15%;
+  left: 10%;
+  transform: translate(-15%, -10%);
+
+  .container {
+    min-width: 400px;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    .login-header {
+      margin: 0px 0px 20px 0px;
+
+      &::first-letter {
+        color: #424242;
+        letter-spacing: 1px;
+        font-size: 3rem;
+      }
+      &::after {
+        content: "";
+        height: 5px;
+        width: 2rem;
+        background-color: #b16fdd;
+        display: block;
+        border-radius: 10px;
+        margin-top: -10px;
+      }
+    }
+    form {
+      padding: 1rem 0px;
+      width: 100%;
+
+      .form-group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        border-bottom: 1px solid #5c5c5c;
+        margin-bottom: 1rem;
+        position: relative;
+
+        i {
+          font-size: 2rem;
+          color: #424242;
+        }
+        input {
+          outline: none;
+          border: none;
+          background: none;
+        }
+
+        span {
+          position: absolute;
+          right: 0%;
+          color: red;
+        }
+        .showPass {
+          position: absolute;
+          bottom: 40%;
+          right: 0%;
+          color: rgb(71, 71, 230);
+          cursor: pointer;
+        }
+        .success {
+          color: green;
+        }
+      }
+      .form-group1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        a {
+          text-decoration: none;
+        }
+      }
+      .login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        font-weight: 550;
+      }
+    }
+    .signup-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      gap: 1rem;
+      margin-top: 1rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      min-width: 350px;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    margin: auto;
+  }
+}

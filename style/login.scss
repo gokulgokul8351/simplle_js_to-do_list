@@ -1,0 +1,178 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background-image: url(../assets/6794637.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  @media screen and (max-width: 800px) {
+    background-image: none;
+  }
+  @media screen and (max-width: 799px) {
+    background-image: url(../assets/19985.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+section {
+  position: absolute;
+  top: 25%;
+  right: 7%;
+  transform: translate(-25%, -7%);
+  .container {
+    min-width: 400px;
+    padding: 1rem 2rem;
+    background: #fff;
+    border-radius: 1rem;
+    .login-header {
+      margin: 0px 0px 20px 0px;
+
+      &::first-letter {
+        color: #424242;
+        letter-spacing: 1px;
+        font-size: 3rem;
+      }
+      &::after {
+        content: "";
+        height: 5px;
+        width: 2rem;
+        background-color: #b16fdd;
+        display: block;
+        border-radius: 10px;
+        margin-top: -10px;
+      }
+    }
+    form {
+      padding: 1rem 0px;
+      width: 100%;
+
+      .form-group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+        border-bottom: 1px solid #5c5c5c;
+        margin-bottom: 1rem;
+        position: relative;
+
+        i {
+          font-size: 2rem;
+          color: #424242;
+        }
+        input {
+          outline: none;
+          border: none;
+          background: none;
+        }
+        span {
+          position: absolute;
+          right: 0%;
+          color: red;
+        }
+        .success {
+          color: green;
+        }
+
+        .showPass{
+          position: absolute;
+          bottom: 40%;
+          right: 0%;
+          color: rgb(71, 71, 230);
+          cursor: pointer;
+        }
+      }
+      .form-group1 {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 1rem;
+
+        a {
+          text-decoration: none;
+        }
+      }
+      .login {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 1.5rem;
+        font-weight: 550;
+        width: 100%;
+      }
+    }
+    .signup-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+      gap: 1rem;
+      margin-top: 1rem;
+
+      a {
+        text-decoration: none;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      min-width: 350px;
+      padding: 1rem;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+  }
+  @media screen and (max-width: 550px) {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -30%);
+    margin: 1rem;
+  }
+
+  @media screen and (max-width: 500px) {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: translate(-20%, -20%);
+    margin: 0px 10px;
+  }
+  @media screen and (max-width: 400px) {
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    transform: translate(-20%, -14%);
+    margin: 0px 10px;
+  }
+  @media screen and (max-width: 300px) {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translate(-25%, -15%);
+    margin: 0px 10px;
+  }
+  @media screen and (max-width: 250px) {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    transform: translate(-20%, -15%);
+    margin: 0px 10px;
+  }
+}
